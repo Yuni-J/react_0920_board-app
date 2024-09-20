@@ -1,0 +1,174 @@
+.boardList table{
+    font-size: 10px;
+    border-collapse: collapse;
+    width: 700px;
+    margin: 20px auto;
+    
+}
+.boardList thead tr{
+    background: linear-gradient(160deg, #000428,#004e92 );
+    /* background: linear-gradient(160deg, #00416A, #e4e5e6 ); */
+}
+.boardList th {
+    /* background-color: #f4f4f4;  */
+    color: #333;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    font-size: 12px;
+    color: white;
+}
+.boardList td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; 
+}
+.boardList tbody tr:hover {
+    background-color: #f1f1f1;
+}
+.boardList table, th, td {
+    border: 1px solid #ddd;
+}
+
+.boardList .link{
+    color: black;
+    text-decoration: none;
+}
+.boardList .link:hover {
+    color: rgb(0, 0, 197); 
+}
+button{
+    font-weight: 700;
+    font-size: 12px;
+    /* background: linear-gradient(160deg, #00416A, #e4e5e6 ); */
+    background-color: rgb(0, 40, 93);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 80px;
+    height: 30px;
+    box-shadow: 2px 2px 2px rgb(48, 48, 48);
+    margin: 5px;
+}
+
+.boardDetail h2{
+    margin: 36px 0;
+}
+.boardDetail .content{
+    border: 1px solid black;
+    width: 70%;
+    height: 200px;
+    padding: 30px;
+    margin: 36px auto;
+}
+.boardDetail .title{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.boardDetail .writer{
+    text-align: end;
+    font-size: 13px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+.boardDetail .con{
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: start;
+}
+
+
+.boardWriting{
+    width: 40%;
+    margin: 36px auto;
+    text-align: start;
+}
+.boardWriting .content{
+    display: flex;
+    flex-direction: column;
+}
+.boardWriting label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+.boardWriting input[type="text"] {
+    border: 1.5px solid  rgb(0, 40, 93);
+    width: 500px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 11px;
+}
+.boardWriting label #r{
+    text-align: end;
+    font-size: 13px;
+    width: 70px;
+    padding: 0;
+    border: none;
+}
+.boardWriting #c{
+    height: 200px;
+}
+.boardWriting button{
+    margin: 0 -1px;
+    margin-right: 10px;
+}
+
+.boardModify input{
+    border: none; /* 테두리 제거 */
+    background: none; /* 배경 제거 */
+    outline: none; /* 아웃라인 제거 */
+    padding: 0; /* 패딩 제거 */
+    margin: 0 auto; /* 마진 제거 */
+    text-align: center;
+}
+.boardModify .title input{
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+}
+/* .boardModify .writer input{
+    text-align: end;
+    margin-right: 5px;
+    font-size: 13px;
+} */
+.boardModify .con input{
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: start;
+    width: 100%;
+}
+.boardModify h2{
+    margin: 36px 0;
+}
+.boardModify .content{
+    border: 1px solid black;
+    width: 70%;
+    height: 200px;
+    padding: 30px;
+    margin: 36px auto;
+}
+.boardModify .title{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.boardModify .writer{
+    text-align: end;
+    font-size: 13px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+.boardModify .con textarea{
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: start;
+    width: 90%;
+    resize: none;
+    border: none;
+    outline: none;
+    overflow: hidden;
+}
