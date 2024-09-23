@@ -122,7 +122,7 @@ app.post(`/update/:id`, (req, res) => {
 });
 
 //삭제
-app.post('/delete/:id', (req, res) => {
+app.get('/delete/:id', (req, res) => {
     const id = req.params.id;
 
     const sql = `delete from board where id = ${id}`;

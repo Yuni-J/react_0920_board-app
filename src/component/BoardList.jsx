@@ -35,41 +35,38 @@ const BoardList = () => {
     //서버에서 데이터를 가져오는 것보다 화면에서 랜더링 되는 속도가 더 빠름
     // 조건을 걸어줘서 error 방지
     if(boardList.length > 0){
-
     //안에 return 
-   
+        return (
+            <div className='boardList'>
+                <h2>Board List Page</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Title</th>
+                                <th>Writer</th>
+                                <th>Reg_date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                boardList.map(b=>(
+                                    <tr key={b.id}>
+                                        <td>{b.id}</td>
+                                        <td>
+                                            <Link to={`/detail/${b.id}`} className='link'>{b.title}</Link>
+                                        </td>
+                                        <td>{b.writer}</td>
+                                        <td>{b.reg_date}</td>
+                                    </tr>
+                                ))
+                            }
+                        </tbody>
+                    </table>
+                    <Link to={'/writing'}><button>글쓰기</button></Link>
+            </div>
+        );
     }
-
-    return (
-        <div className='boardList'>
-            <h2>Board List Page</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Title</th>
-                            <th>Writer</th>
-                            <th>Reg_date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            boardList.map(b=>(
-                                <tr key={b.id}>
-                                    <td>{b.id}</td>
-                                    <td>
-                                        <Link to={`/detail/${b.id}`} className='link'>{b.title}</Link>
-                                    </td>
-                                    <td>{b.writer}</td>
-                                    <td>{b.reg_date}</td>
-                                </tr>
-                            ))
-                        }
-                    </tbody>
-                </table>
-                <Link to={'/writing'}><button>글쓰기</button></Link>
-        </div>
-    );
 };
 
 export default BoardList;

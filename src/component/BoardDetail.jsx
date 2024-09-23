@@ -38,7 +38,7 @@ const BoardDetail = () => {
     const onRemove = async () =>{
         if (window.confirm('정말 삭제 하겠습니까?')) {
             try {
-                await axios.post(`/delete/${id}`); // 삭제 요청 보내기
+                await axios.get(`/delete/${id}`); // 삭제 요청 보내기
                 window.location.href = '/list'; // 삭제 후 리스트로 이동
             } catch (error) {
                 console.error(error);
